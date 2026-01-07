@@ -1,6 +1,9 @@
 :root {
   --serif-font: "Faustina", serif;
   --sans-serif-font: "Roboto", serif;
+  --primary-color: #000;
+  --secondary-color: #4C96D7;
+  --accent-color-1: #fff;
 }
 
 /******* Change Box Model ***************/
@@ -16,4 +19,42 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--serif-font);
+}
+
+li {
+  line-height: 2;
+}
+
+#wrapper {
+  padding: 0.5rem;
+  background-color: var(--accent-color-1);
+}
+
+#top-header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+#top-header a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.siteName {
+  font-size: xx-large;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  color: var(--accent-color-1);
+  background-color: var(--primary-color);
+}
+
+nav li {
+  list-style-type: none;
 }

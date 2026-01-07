@@ -1,0 +1,27 @@
+@media only screen and (min-width: 35rem) {
+    body {
+        background-image: url('/images/site/small_check.jpg');
+    }
+
+    #wrapper {
+        margin: 30px 75px;
+        border: var(--secondary-color) 3px solid;
+        border-radius: 5px;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas: 
+        'hero hero'
+        'upg rev';
+    }
+
+    #rev-div {
+        grid-area: rev;
+    }
+
+    #upg-div {
+        grid-area: upg;
+    }
+
+}
